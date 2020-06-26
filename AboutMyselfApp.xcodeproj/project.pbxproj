@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8201C0EA2484FCF400B0B61F /* LogingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8201C0E92484FCF400B0B61F /* LogingPageViewController.swift */; };
+		820DB7F424852E5C00F73AE4 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820DB7F324852E5C00F73AE4 /* MainMenuViewController.swift */; };
+		820DB7F624852EFC00F73AE4 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820DB7F524852EFC00F73AE4 /* InformationViewController.swift */; };
 		827CC6562484264F0059EC9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827CC6552484264F0059EC9D /* AppDelegate.swift */; };
 		827CC6582484264F0059EC9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827CC6572484264F0059EC9D /* SceneDelegate.swift */; };
 		827CC65A2484264F0059EC9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827CC6592484264F0059EC9D /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8201C0E92484FCF400B0B61F /* LogingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogingPageViewController.swift; sourceTree = "<group>"; };
+		820DB7F324852E5C00F73AE4 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		820DB7F524852EFC00F73AE4 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 		827CC6522484264E0059EC9D /* AboutMyselfApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMyselfApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		827CC6552484264F0059EC9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		827CC6572484264F0059EC9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8201C0E82484FCD500B0B61F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8201C0E92484FCF400B0B61F /* LogingPageViewController.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		827CC6492484264E0059EC9D = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +70,50 @@
 		827CC6542484264E0059EC9D /* AboutMyselfApp */ = {
 			isa = PBXGroup;
 			children = (
-				827CC6552484264F0059EC9D /* AppDelegate.swift */,
-				827CC6572484264F0059EC9D /* SceneDelegate.swift */,
-				827CC6592484264F0059EC9D /* ViewController.swift */,
-				827CC65B2484264F0059EC9D /* Main.storyboard */,
-				827CC65E248426530059EC9D /* Assets.xcassets */,
-				827CC660248426530059EC9D /* LaunchScreen.storyboard */,
-				827CC663248426530059EC9D /* Info.plist */,
+				8201C0E82484FCD500B0B61F /* Models */,
+				82F70978248428A700B10406 /* ViewControllers */,
+				82F70979248428CA00B10406 /* Storyboards */,
+				82F70977248427CC00B10406 /* SupportingFiles */,
+				82F7097A248428DD00B10406 /* Sources */,
 			);
 			path = AboutMyselfApp;
+			sourceTree = "<group>";
+		};
+		82F70977248427CC00B10406 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				827CC6552484264F0059EC9D /* AppDelegate.swift */,
+				827CC6572484264F0059EC9D /* SceneDelegate.swift */,
+				827CC663248426530059EC9D /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		82F70978248428A700B10406 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				827CC6592484264F0059EC9D /* ViewController.swift */,
+				820DB7F324852E5C00F73AE4 /* MainMenuViewController.swift */,
+				820DB7F524852EFC00F73AE4 /* InformationViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		82F70979248428CA00B10406 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				827CC65B2484264F0059EC9D /* Main.storyboard */,
+				827CC660248426530059EC9D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		82F7097A248428DD00B10406 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				827CC65E248426530059EC9D /* Assets.xcassets */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +188,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				827CC65A2484264F0059EC9D /* ViewController.swift in Sources */,
+				820DB7F424852E5C00F73AE4 /* MainMenuViewController.swift in Sources */,
 				827CC6562484264F0059EC9D /* AppDelegate.swift in Sources */,
 				827CC6582484264F0059EC9D /* SceneDelegate.swift in Sources */,
+				8201C0EA2484FCF400B0B61F /* LogingPageViewController.swift in Sources */,
+				820DB7F624852EFC00F73AE4 /* InformationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TBKRN76F6S;
-				INFOPLIST_FILE = AboutMyselfApp/Info.plist;
+				INFOPLIST_FILE = AboutMyselfApp/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +346,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = vmolokov.AboutMyselfApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,7 +356,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TBKRN76F6S;
-				INFOPLIST_FILE = AboutMyselfApp/Info.plist;
+				INFOPLIST_FILE = AboutMyselfApp/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = vmolokov.AboutMyselfApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
